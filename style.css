@@ -20,13 +20,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
-    color: rgb(226, 61, 61);
+    color: rgb(103, 139, 228);
     padding: 15px ;
 }
 button{
     padding:10px 20px ;
     color: white;
-    background-color: rgb(205, 67, 67);
+    background-color: rgb(103, 139, 228);
     border: none;
     border-radius:5px;
     cursor: pointer;
