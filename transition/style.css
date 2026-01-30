@@ -36,6 +36,7 @@ html, body{
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
+    z-index: 1;
 }
 
 .bottom{
@@ -43,13 +44,15 @@ html, body{
     height: 30%;
     background:linear-gradient(transparent,black);
     position: absolute;
-    bottom: -30%;
+    left: 0;
+    bottom: -100%;
     padding:  5px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 20px;
-    transition: all ease 0.5s;
+    transition: bottom ease 0.5s;
+    z-index: 2;
 }
 .bottom h3{
     font-size: 40px;
@@ -58,6 +61,14 @@ html, body{
 .bottom h2{
     color:white;
     border-radius: 50%;
+}
+
+.cards img{
+    transition: transform 0.6s ease;
+}
+
+.cards:hover img{
+    transform: scale(1.1);
 }
 .cards:hover .bottom{
     bottom: 0%;
