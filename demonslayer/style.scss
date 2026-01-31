@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+        section{
+        height: 100%;
+        background-color: rgb(75, 21, 21); 
+        flex-grow: 1;
+        background-size: cover;
+        background-position: center;
+        transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+        position: relative;
+        overflow: hidden;
+        }
+        section:hover{
+            flex-grow: 2;
+        }
+        
+        section:nth-child(1){
+            background-image: url(./nezuko.jpg);
+        }
+        section:nth-child(2){
+            background-image: url(./zenitsu.jpg);
+        }
+        section:nth-child(3){
+            background-image: url(./tanjiro.jpg);
+        }
+        
+        section:nth-child(4){
+            background-image: url(./inosuke.jpg);
+        }
+        section:nth-child(5){
+            background-image: url(./muzan2.jpg);
+        }
+        h1{
+            font-size: 30px;
+            opacity: 0;
+            transition: all 0.5s ease ;
+            color: white;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+        }
+       section:hover h1 {
+        opacity: 1;
+    }
+        
+       
+}
